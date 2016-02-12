@@ -58,7 +58,7 @@ int main (int argc, char** argv) {
     case 0:
       // flag_char will be 0 for long-form options like --verbose and --quiet,
       // where the third argument is not NULL. This would also get hit if you
-      // set the fourth argument for the other arguments to '0'.
+      // set the fourth argument for the other arguments to 0.
       cout << "Saw --" << long_options[option_index].name << " flag" << endl;
       break;
 
