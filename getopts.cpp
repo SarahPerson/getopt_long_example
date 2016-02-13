@@ -37,7 +37,8 @@ int main (int argc, char** argv) {
   // getopt_long parses one argument at a time. Loop until it tells us that it's
   // all done (returns -1).
   while (true) {
-    // getopt_long stores the latest option index here so you can 
+    // getopt_long stores the latest option index here,you can get the flag's
+    // long-form name by using something like long_options[option_index].name
     int option_index = 0;
 
     // Process the next command-line flag. the return value here is the
